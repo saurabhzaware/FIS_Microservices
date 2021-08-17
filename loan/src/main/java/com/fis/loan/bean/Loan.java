@@ -1,34 +1,32 @@
 package com.fis.loan.bean;
 
 public class Loan {
+
 	private long number;
 	private String type;
 	private long loan;
 	private long emi;
 	private int tenure;
-	
+
 	public Loan() {
+		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	
-
-	public Loan(long l, String type, long loan, long emi, int tenure) {
+	public Loan(long number, String type, long loan, long emi, int tenure) {
 		super();
-		this.number = l;
+		this.number = number;
 		this.type = type;
 		this.loan = loan;
 		this.emi = emi;
 		this.tenure = tenure;
 	}
 
-
-
 	public long getNumber() {
 		return number;
 	}
 
-	public void setNumber(int number) {
+	public void setNumber(long number) {
 		this.number = number;
 	}
 
@@ -69,6 +67,5 @@ public class Loan {
 		return "Loan [number=" + number + ", type=" + type + ", loan=" + loan + ", emi=" + emi + ", tenure=" + tenure
 				+ "]";
 	}
-	
-	
+
 }
